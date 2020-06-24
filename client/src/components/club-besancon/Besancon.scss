@@ -1,0 +1,474 @@
+main {
+  background-color: black;
+}
+
+section {
+  margin-bottom: 10px;
+}
+
+.navbar-besancon {
+  height: 40px;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 120;
+  top: 63px;
+  width: 100%;
+  background-color: #9e9e9ecc;
+  animation-name: navBesancon;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.first-section-besancon {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #000 none no-repeat scroll center center;
+  background-size: cover;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s;
+    opacity: 0.7;
+  }
+
+  div {
+    z-index: 100;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    animation-name: navBesancon;
+    animation-duration: 1s;
+    span {
+      font-family: "circular";
+      color: white;
+
+      font-size: 2.5em;
+    }
+    h2 {
+      z-index: 90;
+      font-family: "sectra-fine";
+      font-size: 8em;
+      color: white;
+      width: fit-content;
+      text-align: center;
+    }
+  }
+}
+
+.besancon-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 110vh;
+
+  .time {
+    height: 43%;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  h6 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-family: "circular";
+    font-size: 2em;
+  }
+
+  .top-part {
+    border: solid 1px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    max-width: 950px;
+    flex-wrap: wrap;
+    min-height: 35vh;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      width: 20%;
+      min-width: 140px;
+    }
+  }
+
+  .bottom-part {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 950px;
+    min-height: 65vh;
+
+    h3 {
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    p {
+      width: 80%;
+      font-size: 2.5em;
+    }
+  }
+}
+.nos-formule,
+.activity {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+  }
+
+  h2 {
+    color: white;
+    font-size: 6em;
+    margin-top: 10vh;
+    font-weight: bold;
+  }
+
+  h2,
+  h3,
+  h5 {
+    z-index: 10;
+  }
+
+  .nav-button {
+    z-index: 10;
+  }
+
+  button {
+    z-index: 10;
+    margin: 25px;
+    border: none;
+    background-color: white;
+    /* width: 170px; */
+    font-size: 15px;
+    font-weight: bold;
+    min-width: 190px;
+    /* font-size: .75em; */
+    line-height: 50px;
+    width: 20%;
+  }
+  .des-act {
+    margin-top: 0px;
+    transition: margin-top s linear;
+  }
+  .description {
+    z-index: 10;
+    width: 60%;
+    // height: 50%;
+    text-align: center;
+    color: white;
+    max-width: 700px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 5em;
+      margin: auto;
+    }
+
+    p {
+      font-size: 2em;
+    }
+  }
+
+  span {
+    font-size: 1.3em;
+  }
+
+  .direction {
+    position: relative;
+    width: 48px;
+    height: 40px;
+  }
+  .link {
+    color: white;
+    z-index: 10;
+  }
+  .links {
+    margin-top: 10%;
+    width: 60%;
+    z-index: 9;
+    min-width: 300px;
+
+    ul {
+      font-size: 20px;
+      padding-left: 0px;
+      width: 100%;
+      list-style: none;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      li {
+        // text-decoration: underline;      }
+      }
+    }
+  }
+}
+
+.introduction {
+  background-color: white;
+  text-align: center;
+  padding-top: 105px;
+  padding-bottom: 105px;
+
+  p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: auto 15vw;
+  }
+
+  button {
+    border: none;
+    color: white;
+    display: inline-block;
+    min-width: 175px;
+    padding: 0 15px;
+    background: #000000;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.075rem;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+.coaching-personnel,
+.clubs,
+.studios {
+  display: flex;
+  position: relative;
+  border: solid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  img {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+
+    object-fit: cover;
+
+    // display: none;
+  }
+
+  button {
+    z-index: 10;
+    margin: 10px;
+    border: none;
+    background-color: white;
+    /* width: 170px; */
+    font-size: 15px;
+    min-width: 190px;
+    /* font-size: .75em; */
+    line-height: 50px;
+    width: 20%;
+  }
+
+  .links {
+    width: 50%;
+    z-index: 9;
+    min-width: 300px;
+
+    ul {
+      font-size: 20px;
+      padding-left: 0px;
+      width: 100%;
+      list-style: none;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      li {
+        // text-decoration: underline;      }
+      }
+    }
+  }
+
+  .description {
+    margin: 20px;
+    z-index: 10;
+    width: 50%;
+    // height: 50%;
+    text-align: center;
+    color: white;
+    max-width: 550px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 5em;
+    }
+
+    p {
+      font-size: 2em;
+    }
+  }
+}
+
+.last-section,
+.coaching-personnel {
+  align-items: flex-start;
+
+  .description {
+    height: 65%;
+    margin: 20px;
+    width: 300px;
+    padding: 10px;
+    background-color: #000000;
+
+    h3 {
+      font-size: 3em;
+    }
+  }
+}
+
+.slider {
+  background-color: white;
+  padding: 20px 0 60px 0;
+
+  .title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    h2 {
+      width: fit-content;
+      font-size: 4em;
+      margin: 10px 0 40px 0;
+      display: flex;
+      justify-self: center;
+    }
+  }
+}
+
+.last-section,
+.coaching-personnel {
+  height: 80vh;
+  display: flex;
+
+  .description {
+    display: flex;
+    align-self: flex-start;
+    justify-self: self-start;
+  }
+
+  .bes-desc {
+    height: 65%;
+  }
+
+  .bes-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// [aos="fade"] {
+//   opacity: 0;
+//   transition-property: opacity;
+// }
+
+// [aos="fade"].aos-animate {
+//   opacity: 1;
+// }
+
+@keyframes navBesancon {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes descriptionMovement {
+  from {
+    margin-top: 0px;
+  }
+
+  to {
+    margin-top: 20px;
+  }
+}
+@keyframes changeOpacity {
+  0% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
+.activity:hover .des-act {
+  animation-name: descriptionMovement;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+}
+.activity:hover img {
+  animation-name: changeOpacity;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+.nos-formule{
+  height: 40vh;
+}
