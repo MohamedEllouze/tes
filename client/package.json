@@ -12,7 +12,7 @@
     "heroku": "^7.39.1",
     "history": "^4.10.1",
     "jwt-decode": "^2.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "notistack": "^0.9.11",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0",
